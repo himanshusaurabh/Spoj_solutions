@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+	int a,b,c,d,n,e,f;
+	scanf("%d",&n);
+while(n-->0)
+{scanf("%d %d",&a,&b);
+d=reverse(a);
+e=reverse(b);
+f=d+e;
+f=reverse(f);
+	printf("%d \n",f);
+}
+	return 0;
+}
+int reverse(int n)
+{int k,l;l=0;
+while(n!=0)
+{k=n%10;
+	l=l*10+k;
+	n/=10;
+}
+	
+return l;	
+}
